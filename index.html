@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nama</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bc6c224c54.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html" class="trenutni">Početna</a>
+                </li>
+                <li>
+                    <a href="galerija.html" >Galerija</a>
+                </li>
+                <li>
+                    <a href="fotografi.html">Fotografi</a>
+                </li>
+                <li>
+                    <a href="pridruzise.html">Pridružite se</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick=function() {
+            navBar=document.querySelector(".navbar");
+            navBar.classList.toggle("trenutni")
+        }
+    </script>
+
+    <section class="about">
+    <div class="content">
+        <img src="slike/pocetnaslika.jpeg" alt="">
+        <div class="text">
+            <h1>O NAMA</h1>
+            <h5>Fotografski studio</h5>
+            <p id="uvod">Sa sedištem u Beogradu, ali volimo da putujemo svetom. 
+                <br> Naša ljubav prema umetnosti dovela nas je do toga da fotografišemo vaše trenutke na drugačiji način. 
+                <br> Stvari koje nas inspirišu: knjige, dobri filmovi, arhitektura, snežni vrhovi planina, letnje noći, a najviše more. 
+                <br> Možete videti kontrast u ovim rečima, ali to je zato što nalazimo lepotu u svemu na ovom svetu.</p>
+                <button id="hide">Sakrij</button>
+                <button id="show">Prikaži</button>
+        </div>
+    </div>
+    </section>
+    <div class="footer">
+        <div class="col-1"> 
+            <h3>KORISNI LINKOVI</h3>
+            <a href="index.html">Početna</a>
+            <a href="galerija.html">Galerija</a>
+            <a href="fotografi.html">Fotografi</a>
+            <a href="pridruzise.html">Pridružite se</a>
+        </div>
+        <div class="col-2">
+            <h3>Kontakt</h3>
+            <p id="adresa">Vojvode Stepe, 328<br>
+                +381 62 558 798 <br>
+                 Beograd, Srbija
+            </p>
+            
+        </div>
+        <div class="col-3">
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- ne znam da li ovako treba-->
+    <script src="javascript/javascript.js"></script>
+   
+</body>
+</html>

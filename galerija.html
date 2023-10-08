@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+    <link rel="stylesheet" href="css/galerijacss.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bc6c224c54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html" >Početna</a>
+                </li>
+                <li>
+                    <a href="galerija.html" class="trenutni">Galerija</a>
+                </li>
+                <li>
+                    <a href="fotografi.html">Fotografi</a>
+                </li>
+                <li>
+                    <a href="pridruzise.html">Pridružite se</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick=function() {
+            navBar=document.querySelector(".navbar");
+            navBar.classList.toggle("trenutni")
+        }
+    </script>
+    <div class="full-img" id="fullimgbox">
+        <img src="slike/budimpesta.jpeg" id="fullimg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="slike/palma1.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/Florida.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/Havajii.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/kuca.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/Mostar.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/budimpesta.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/palma2.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/palma3.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/planina.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/plaza.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/svStefan.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="slike/ulica.jpeg" alt="" onclick="openFullImg(this.src)">
+        
+        
+    </div>
+    <div class="footer">
+        <div class="col-1"> 
+            <h3>KORISNI LINKOVI</h3>
+            <a href="index.html">Početna</a>
+            <a href="galerija.html">Galerija</a>
+            <a href="fotografi.html">Fotografi</a>
+            <a href="pridruzise.html">Pridružite se</a>
+        </div>
+        <div class="col-2">
+            <h3>Kontakt</h3>
+            <p id="adresa">Vojvode Stepe, 328<br>
+                +381 62 558 798 <br>
+                 Beograd, Srbija
+            </p>
+            
+        </div>
+        <div class="col-3">
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+
+            </div>
+        </div>
+        
+    </div>
+    <script src="javascript/galerijajs.js"></script>
+    
+</body>
+</html>

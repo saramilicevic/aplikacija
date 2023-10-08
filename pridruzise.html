@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pridružite se</title>
+    <link rel="stylesheet" href="css/pridruzisecss.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bc6c224c54.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <header>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html" >Početna</a>
+                </li>
+                <li>
+                    <a href="galerija.html" >Galerija</a>
+                </li>
+                <li>
+                    <a href="fotografi.html">Fotografi</a>
+                </li>
+                <li>
+                    <a href="pridruzise.html" class="trenutni">Pridružite se</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="sat">
+        <h1 id="trenutno-vreme"></h1>
+        
+    </div>
+    <div class="forma">
+        <form >
+            <div class="polje">
+                <label >Ime</label>
+                <input type="text"  placeholder="Unesite ime" id="ime" onkeyup="validateIme()">
+                <span id="ime-greska"></span>
+            </div>
+
+            <div class="polje">
+                <label >Prezime</label>
+                <input type="text" placeholder="Unesite prezime" id="prezime" onkeyup="validatePrezime()">
+                <span id="prezime-greska"></span>
+            </div>
+
+            <div class="polje">
+                <label >Email</label>
+                <input type="email" placeholder="Unesite email adresu" id="email" onkeyup="validateEmail()">
+                <span id="email-greska"></span>
+            </div>
+
+            <div class="polje">
+                <label >Broj telefona</label>
+                <input type="tel" placeholder="Unesite broj telefona" id="telefon" onkeyup="validateTelefon()">
+                <span id="tel-greska"></span>
+            </div>
+            <div class="polje">
+                <label >Vaše iskustvo</label> <br>
+                <input type="radio" name="iskustvo" required> Do 5 godina <br>
+                <input type="radio" name="iskustvo" required> Od 5 do 10 godina <br>
+                <input type="radio" name="iskustvo" required> Preko 10 godina <br>
+
+            </div>
+
+            <div class="polje">
+                <label >Poruka</label>
+                <textarea rows="5" placeholder="Unesite vašu poruku" id="poruka" onkeyup="validatePoruka()" ></textarea>
+                <span id="poruka-greska"></span>
+            </div>
+
+            <button type="submit" class="dugme" onclick="validateForm()">Pošalji</button>  
+            <span id="dugme-greska"></span>
+                          
+
+        </form>
+       <div class="potvrda">
+            <div class="popup" id="popup">
+            <img src="slike/преузимање.png">
+            <h2>Hvala za prijavu</h2>
+            <p>Vaši podaci su uspešno sačuvani</p>
+            </div>
+        </div> 
+        
+    </div>
+    </div>
+    <div class="footer">
+        <div class="col-1"> 
+            <h3>KORISNI LINKOVI</h3>
+            <a href="index.html">Početna</a>
+            <a href="galerija.html">Galerija</a>
+            <a href="fotografi.html">Fotografi</a>
+            <a href="pridruzise.html">Pridružite se</a>
+        </div>
+        <div class="col-2">
+            <h3>Kontakt</h3>
+            <p id="adresa">Vojvode Stepe, 328<br>
+                +381 62 558 798 <br>
+                 Beograd, Srbija
+            </p>
+            
+        </div>
+        <div class="col-3">
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+
+            </div>
+        </div>
+        
+    </div>
+    
+     
+      <script src="javascript/javascript.js"></script> 
+
+ 
+      <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+</body>
+</html>
